@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    color: white;
+}
+.brand{
+    margin-top: -7px;
+}
+
+.brand span{
+    color: red;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: #47289c; 
+}
+.Menú{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    
+}
+.Menú li{
+    list-style: none;
+    
+}
+.Menú a{
+    color:white;
+    text-decoration: none;
+}
+.Menú .active{
+    color: aqua;
+}
+.Menú a:hover{
+    background-color: aqua;
+    color:black;
+    transition: ease-in .4s;
+}
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+}
+h1{
+    font-size: 3em;
+}
+span{
+    color: aqua;
+}
+.download{
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 231,200, 600);
+}
+.download:hover{
+    background-color: white;
+    box-shadow: none;  
+}
+.main img{
+    width: 350px;
+    border: 7px solid aqua;
+    height: 460px;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+.about img{
+    width: 90%;
+    grid-column: 1/5;
+}
+.about-info{
+    grid-column: 5/10;
+    padding: 2em;
+}
+.about-info h2{
+    font-size: -7px;
+    color: #0f1f7a;
+}
+.dividir{
+    height: 4px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 10px;
+    margin-bottom: 3em;
+}
+.about p{
+    margin-bottom: 1em;
+}
+.portfolio{
+    width: 100vw;
+    color: white;
+    background-color: blue;
+
+}
+.portfolio-head{
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5em;
+
+}
+.portfolio-head h2{
+    font-size: 3em;
+
+}
+.portfolio .container{
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    color: white;
+    height: 350px;
+    background-color: #47289c;
+    margin: 1em;
+
+}
+.card_image{
+    width: 100%;
+    height: 150px;
+    background-image:  url(./IMG/Descripcion.png);
+    background-size: cover;
+
+}
+.card_title{
+    padding: 20px;
+    text-align: center;
+}
+.card .project-link{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card .project-link a{
+    color: white;
+    text-decoration: none;
+
+}
+.card .project-link i{
+    font-size: 2em;
+}
+.card .project-details{
+    width: 70%;
+    margin: 0 auto;
+    margin: 1em;
+}
+.project-buttom{
+    display: flex;
+    justify-content: center;
+}
+.card .project-details a{
+    text-decoration: none;
+    color: #191c32;
+
+}
+.contact-section{
+    background-color: white;
+    border: 2px solid none;
+}
+.container-contact{
+    padding: 3em;
+    margin: 0 auto;
+    background-color: white;
+}
+.container-contact img{
+    width: 750px;
+    height: 700px;
+    bottom: 0px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+    
+
+}
+.form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid gray;
+
+}
+.form textarea{
+    height: 150px;
+    background: none;
+    padding: 2em;
+    border: 1px solid gray;
+}
+.btn-send{
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: aqua;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba(102, 221,200, 600);
+}
+.btn-sumit:hover{
+    background: gray;
+    box-shadow: none;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: aqua;
+}
+.footer-content h2{
+    font-size: 2em;
+}
+.footer-content h3{
+    font-size: 1.5em;
+}
+.social-network{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+
+}
+.social-network i{
+    font-size: 1.5em;
+}
+
+@media screen and (min-width:480px) and (max-width:780px) {
+    .wrapper{
+        width: 120vw;
+    }
+    .navbar{
+        width: 120vw;
+        padding: 2rem;
+    }
+    .Menú{
+        display: flex;
+        width: 60%;    
+    }
+    .main{
+        margin: 0 auto;
+        width: 70vw;
+        height: 70vh;
+    }
+
+    h1{
+        padding: 0.5rem;
+        margin-left: -60px;
+        font-size: 3em;
+    }
+    p{
+        margin-left: -50px;  
+    }
+
+    .download{
+        margin-left: -40px;
+    }
+    .main img{
+        width: 220px;
+        height: 320px;
+    }
+    .portfolio{
+        width: 120vw;
+    
+    }
+    .portfolio-head{
+        width: 100vw;
+        padding: 5em;
+    
+    }
+    .portfolio-head h2{
+        font-size: 3em;
+    
+    }
+    .portfolio .container{
+        width: 80vw;
+        height: 80vh;
+    }
+    .card{
+        width: 200px;
+        
+    
+    }
+    .card_image{
+        width: 100%;
+        height: 150px;
+    
+    }
+    .card_title h2{
+        width: 30vw;
+        margin-left: -40px;
+        padding: 12px;
+    }
+    .card_title{
+        padding: 20px;
+     
+    }
+    .project-link a{
+        margin-top: -12px;
+    }
+    .container-contact img{
+        width: 350px;
+        height: 500px;
+    
+    }
+    .form textarea{
+        height: 100px;
+    }
+    .footer{
+        width: 120vw;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .wrapper{
+        width: 110vw;
+    }
+    .brand h2{
+        width: 5vw;
+        margin-left: -30px;
+    }
+
+    .Menú{
+        display: inline-block;
+        
+    }
+    h1{
+        font-size: 1.5em;
+        margin-left: -15px;
+    }
+    .main p{
+        margin-left: -10px;
+    }
+    
+    .download{
+        font-size: 0.7em;
+        padding: 8px 10px;
+        margin-left: -20px;
+    }
+
+    .main img{
+        width: 150px;
+        height: 250px;
+    }
+    .portfolio-head h2{
+        font-size: 2em;
+    
+    }
+    .portfolio .container{
+        display: inline-table;
+    }
+    .card{
+        width: 220px;
+        margin-left: 60px;
+    
+    }
+    .card_title h2{
+        width: 30vw;
+        margin-left: 20px;
+    }
+    .card_title{
+       padding: 20px;
+     
+    }
+    .container-contact img{
+        width: 220px;
+        height: 350px;
+        margin-left: 10px;
+    }
+    .form textarea{
+        height: 120px;
+        background: none;
+        padding: 2em;
+    }
+    .btn-send{
+        padding: 5px 20px;
+        margin: 1em;
+        margin-left: -5px;
+    }
+    .btn-send{
+        width: 120px;
+    }
+
+}
+

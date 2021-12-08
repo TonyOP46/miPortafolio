@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>My <span>Portfolio</span></h2>
+                </div>
+                <ul class="Menú">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#seccion">About me</a></li>
+                    <li><a href="#portafolio">portfolio</a></li>
+                    <li><a href="#contactos">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="info">
+                <h1>My name is <span>Tony Ospino</span></h1>
+                <p>I'm web developer</p>
+                <a href="#"><button class="download">Download Cv</button></a>
+            </div>
+            <img src="./IMG/Mi foto.png" alt="Imagen de mi perfil">
+
+        </main>
+    </div>
+    <div class="about" id="seccion">
+        <img src="./IMG/Serio.JPG" alt="Foto de Cv">
+        <div class="about-info">
+            <h2>About me</h2>
+            <div class="dividir"></div>
+            <p>As an engineer I am passionate
+                software development
+                through the language of
+                java programming, SQL,
+                among others. I consider myself
+                a responsible person
+                which one tries to fulfill its
+                work in the best way
+                possible and when you see
+                difficulties face them not</p>
+            <p>I let myself be defeated, currently
+                I don't have much experience
+                but I have all the desire
+                to learn and to follow
+                getting ready, I like it
+                make new friends and
+                help those most
+                need</p>
+            <button class="download">Read more</button>
+        </div>
+    </div>
+    <div class="portfolio" id="portafolio">
+        <div class="portfolio-head">
+            <h2>My Portfolio</h2>
+            <div class="dividir"></div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <div class="card_image"></div>
+                <div class="card_title">
+                    <h2>Academlo Front-End</h2>
+                </div>
+                <div class="project-link">
+                    <a href="https://github.com/TonyOP46/HTMLandCSS" target="_blanc">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://es.m.wikipedia.org/wiki/Archivo:North_America_on_the_globe_(red).svg"
+                        target="_blanc">
+                        <i class="fas fa-globe-americas"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+                <div class="project-buttom">
+                    <button class="project-details download">
+                        <a href="">
+                            project detail
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"></div>
+                <div class="card_title">
+                    <h2>Academlo Back-End</h2>
+                </div>
+                <div class="project-link">
+                    <a href="https://github.com/TonyOP46/HTMLandCSS" target="_blanc">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://es.m.wikipedia.org/wiki/Archivo:North_America_on_the_globe_(red).svg"
+                        target="_blanc">
+                        <i class="fas fa-globe-americas"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+                <div class="project-buttom">
+                    <button class="project-details download">
+                        <a href="">
+                            project detail
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card_image"></div>
+                <div class="card_title">
+                    <h2>Comfenalco projects</h2>
+                </div>
+                <div class="project-link">
+                    <a href="https://github.com/TonyOP46/HTMLandCSS" target="_blanc">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://es.m.wikipedia.org/wiki/Archivo:North_America_on_the_globe_(red).svg"
+                        target="_blanc">
+                        <i class="fas fa-globe-americas"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+                <div class="project-buttom">
+                    <button class="project-details download">
+                        <a href="">
+                            project detail
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="contact-section" id="contactos">
+        <div class="contact-head">
+            <h2>keep in touch</h2>
+            <div class="dividir"></div>
+        </div>
+        <div class="container-contact">
+            <img src="./IMG/image (2).png" alt="">
+            <div class="contact-form">
+                <h4>Send me a message...</h4>
+                <form class="form">
+                    <input type="text" placeholder="Name" required="please write a name" min="3" max="12">
+                    <input type="email" placeholder="Email" required="please write a email" max="30">
+                    <textarea placeholder="place you message"></textarea>
+                    <button type="submit" class="btn-send">Send message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Tony Ospino</h2>
+            <h3> Web Developer</h3>
+        </div>
+        <div class="social-network">
+            <a href="https://www.linkedin.com/in/tony-ospino-parra-276454167/" target="_blanc"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/TonyOP46" target="_blanc"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+
+    </footer>
+
+</body>
+
+</html>
